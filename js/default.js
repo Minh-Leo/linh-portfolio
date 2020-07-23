@@ -1,5 +1,6 @@
 (function () {
   const wrapper = document.getElementById('fold-effect');
+  const body = document.querySelector('body');
   const btn = document.getElementById('btn-theme');
 
   const folds = Array.from(document.getElementsByClassName('fold'));
@@ -9,6 +10,7 @@
   // Toggle light or dark mode
   const toggleTheme = () => {
     wrapper.classList.toggle('theme');
+    body.classList.toggle('theme');
   };
   btn.addEventListener('click', toggleTheme);
 
