@@ -250,18 +250,55 @@ a:focus {
       justify-self: end;
 }
 
-.nav__side a {
+.social__circle {
+  display: none;
+  width: 12rem;
+  height: 12rem;
+  background: #0f1a20;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.social__circle .fab {
+  position: absolute;
+}
+
+.social__circle .fa-facebook {
+  top: 2rem;
+  left: 0;
+}
+
+.social__circle .fa-instagram {
+  top: 5rem;
+  left: 0;
+}
+
+.social__circle .fa-linkedin {
+  top: 8rem;
+  left: 0;
+}
+
+.social__circle .fa-youtube {
+  top: 11rem;
+  left: 0;
+}
+
+.nav__side .btn-side {
   position: relative;
 }
 
-.nav__side a:before, .nav__side a:after {
+.nav__side .btn-side:before, .nav__side .btn-side:after {
   content: '';
   width: 9rem;
   height: 1px;
   position: absolute;
 }
 
-.nav__side a:before {
+.nav__side .btn-side:before {
   top: -6rem;
   left: -3.5rem;
   background: var(--color-link);
@@ -269,7 +306,7 @@ a:focus {
           transform: rotate(-90deg);
 }
 
-.nav__side a:after {
+.nav__side .btn-side:after {
   bottom: -6rem;
   left: -3.5rem;
   background: var(--color-link);

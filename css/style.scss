@@ -103,7 +103,41 @@
     justify-self: end;
   }
 }
-.nav__side a {
+
+// working
+.social__circle {
+  display: none;
+  width: 12rem;
+  height: 12rem;
+  background: #0f1a20;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+
+  & .fab {
+    position: absolute;
+  }
+  & .fa-facebook {
+    top: 2rem;
+    left: 0;
+  }
+  & .fa-instagram {
+    top: 5rem;
+    left: 0;
+  }
+  & .fa-linkedin {
+    top: 8rem;
+    left: 0;
+  }
+  & .fa-youtube {
+    top: 11rem;
+    left: 0;
+  }
+}
+
+.nav__side .btn-side {
   position: relative;
 
   &:before,
