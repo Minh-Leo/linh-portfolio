@@ -12,6 +12,10 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="favicon.ico" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/ofv7fvi.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -42,92 +46,96 @@
   <body class="loading">
     <main>
       <!-- <div class="message">Some message for mobile (if needed).</div> -->
-      <div class="frame">
-        <h1 class="frame__title">3D Folded Layout</h1>
-        <div class="frame__links">
-          <a href="http://tympanus.net/Tutorials/TextureProjection/"
-            >Previous Demo</a
-          >
-          <a href="https://tympanus.net/codrops/?p=46441">Article</a>
-          <a href="https://github.com/Anemolo/FoldingDOM">GitHub</a>
+      <div class="nav">
+        <h1 class="nav__title"><a href="index.html">KeiraLynh</a></h1>
+        <div class="nav__links">
+          <a href="">
+            Projects
+          </a>
+          <a href="./blog.html">Blog</a>
+          <a href="">Contact</a>
         </div>
-        <div class="frame__demos">
-          <a href="index.html" class="frame__demo frame__demo--current"
-            >demo 1</a
-          >
-          <a href="index2.html" class="frame__demo">demo 2</a
-          ><a href="index3.html" class="frame__demo">demo 3</a
-          ><a href="index4.html" class="frame__demo">demo 4</a
-          ><a href="index5.html" class="frame__demo">demo 5</a>
+
+        <div class="nav__side left">
+          <a class="btn-icon" id="btn-theme">
+            <i class="fas fa-adjust"></i>
+          </a>
+        </div>
+        <div class="nav__side right">
+          <a class="btn-icon" id="btn-social">
+            <i class="fas fa-box-open"></i>
+          </a>
+        </div>
+
+        <div class="nav__bottom">
+          <a href="" class="nav__bottom-link nav__bottom-link--current">
+            page 1
+          </a>
+          <a href="" class="nav__bottom-link">page 2</a
+          ><a href="" class="nav__bottom-link">page 3</a
+          ><a href="" class="nav__bottom-link">page 4</a>
         </div>
       </div>
 
       <div class="content">
         <div class="fold-content" id="base-content">
           <!-- CONTENT INSIDE HERE -->
+          <!-- Headline -->
           <div class="content__line">
-            <span class="type type--1">Bocelli</span>
-            <span class="type type--2">Barcelona</span>
-            <span class="type type--1">Bocelli</span>
-            <span class="type type--2">Barcelona</span>
+            <span class="type type--1">Hello,</span>
+            <span class="type type--1">I'm</span>
+            <span class="type type--2">Keira</span>
+            <span class="type type--2">Lynh</span>
           </div>
-          <div class="content__line">
-            <img
-              class="content__line_img"
-              src="https://source.unsplash.com/random/640x480/?blue"
-              alt="Some image"
-            />
-            <img
-              class="content__line_img"
-              src="https://source.unsplash.com/random/640x480/?red"
-              alt="Some image"
-            />
-            <img
-              class="content__line_img"
-              src="https://source.unsplash.com/random/640x480/?green"
-              alt="Some image"
-            />
-            <img
-              class="content__line_img"
-              src="https://source.unsplash.com/random/640x480"
-              alt="Some image"
-            />
+          <!-- Profile picts -->
+          <div class="content__line imgGroup">
+            <div class="content__line_img">
+              <img class="" src="./media/1.jpg" alt="" />
+            </div>
+            <div class="content__line_img">
+              <img class="" src="./media/2.jpg" alt="" />
+            </div>
+            <div class="content__line_img">
+              <img class="" src="./media/3.jpg" alt="" />
+            </div>
           </div>
+          <!-- Intro -->
           <div class="content__line">
             <a href="www.google.com">
-              <span class="type type--6">Franklin</span></a
-            >
-            <span class="type type--1">Berlin</span>
-            <span class="type type--6">Franklin</span>
+              <span class="type type--6">Intro&nbsp;</span>
+            </a>
+            <!-- <span class="type type--1">Intro</span> -->
+            <div class="content__line_group threeThirdWidth">
+              <p>
+                a part-time creator, part-time daydreamer. I produce videos. I
+                take photos. I play jams on the piano. And I can make that
+                perfect muffin you love. I love talking new ideas and recycling
+                old ideas. I also love making new friends, and reconnect with
+                the old ones. So message me and let’s together create something
+                cool!
+              </p>
+              <!-- <span class="type type--6">Franklin</span> -->
+            </div>
           </div>
+
+          <!-- line -->
           <div class="content__line">
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
-            <span class="type type--5">Tokyo</span>
+            <div class="line"></div>
           </div>
+
+          <!-- Title -->
           <div class="content__line">
-            <span class="type type--7">New York</span>
-            <!-- <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eyHY6k97D8I"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
-            <span class="type type--7">New York</span>
+            <span class="type type--5">Content</span>
+            <span class="type type--2">Creator</span>
+            <span class="type type--5">Visual</span>
           </div>
+          <!-- Blog post -->
           <div class="content__line">
-            <!-- <span class="type type--6">Franklin</span> -->
-            <img
-              class=""
-              src="https://source.unsplash.com/random/640x480"
-              alt="Some image"
-            />
-            <div class="content__line_group">
-              <a href=""><span class="type type--3">Sandeca</span></a>
-              <a href=""><span class="type type--3">Sandeca</span></a>
-              <a href=""><span class="type type--3">Sandeca</span></a>
+            <div class="content__line_img">
+              <img class="" src="./media/4.jpg" alt="Some image" />
+            </div>
+            <div class="content__line_group halfWidth">
+              <a href=""><span class="type type--6">Melbourne</span></a>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Ratione tenetur non nulla suscipit voluptates qui reprehenderit,
@@ -138,66 +146,183 @@
                 sed, placeat ad molestiae! Lorem ipsum dolor, sit amet
                 consectetur adipisicing elit. Ratione tenetur non nulla suscipit
                 voluptates qui reprehenderit, incidunt pariatur eveniet totam
-                sapiente facere commodi assumenda cupiditate dolores voluptas at
-                accusantium vitae corporis! Delectus nulla veritatis quasi
-                velit, ducimus soluta est asperiores rem necessitatibus
-                voluptate quidem tempore error sed, placeat ad molestiae! Lorem
-                ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-                tenetur non nulla suscipit voluptates qui reprehenderit,
-                incidunt pariatur eveniet totam sapiente facere commodi
-                assumenda cupiditate dolores voluptas at accusantium vitae
-                corporis! Delectus nulla veritatis quasi velit, ducimus soluta
-                est asperiores rem necessitatibus voluptate quidem tempore error
-                sed, placeat ad molestiae!
+                sapiente facere commodi assumenda cupiditate dolores voluptas
               </p>
               <!-- <span class="type type--6">Franklin</span> -->
             </div>
           </div>
+          <!-- Title -->
           <div class="content__line">
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
+            <span class="type type--7">Projects&nbsp;</span>
+
+            <span class="type type--7">&nbsp;Works</span>
+          </div>
+
+          <!-- Spark deakin -->
+          <div class="content__line">
+            <span class="type type--6"> Deakin</span>
+            <a href="blog.html"> <span class="type type--1">Spark</span></a>
+            <a href="blog.html"> <span class="type type--6"> Deakin</span></a>
+            <span class="type type--1">Spark</span>
           </div>
           <div class="content__line">
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
+            <div class="content__line_group halfWidth">
+              <p>
+                I started to learn and do research about entrepreneurship since
+                I was in high school, but it was rather an alone journey.
+                Whenever an idea comes into my mind (which is a lot of times,
+                sometimes in the same day), I would write it down and save it
+                there. Till this point, I currently have a huge collection of
+                ideas, yet never had an opportunity to initiate or execute them.
+                <br />
+                <br />
+                Coming to the SPARK Deakin Ideation Program with a beginner’s
+                mind, I hope to learn new things and step-by-step techniques to
+                bring any good ideas into life. <br />
+                Other than that, I hope to build a network of like-minded pals
+                who have the same interests and energy to create new products or
+                services that make an impact. I made this blog series to record
+                my learning journey throughout the program, and am excited to
+                see how much I grow afterwards.
+              </p>
+              <span class="type type--6">Ideation.Creation</span>
+            </div>
+            <div class="content__line_group halfWidth">
+              <video autoplay playsinline muted loop id="myVideo">
+                <source src="./media/video/idea-spark.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
+
+          <!-- line -->
           <div class="content__line">
-            <span class="type type--1">Bocelli</span>
-            <span class="type type--2">Barcelona</span>
-            <span class="type type--1">Bocelli</span>
-            <span class="type type--2">Barcelona</span>
+            <div class="line"></div>
           </div>
+
+          <!-- Title -->
           <div class="content__line">
-            <span class="type type--3">Sandeca</span>
-            <span class="type type--4">Budapest</span>
-            <span class="type type--3">Sandeca</span>
-            <span class="type type--4">Budapest</span>
-            <span class="type type--3">Sandeca</span>
-            <span class="type type--4">Budapest</span>
+            <span class="type type--6">Commercial</span>
+            <span class="type type--1">projects</span>
+
+            <span class="type type--6">Commercial</span>
+            <span class="type type--1">projects</span>
+            <span class="type type--6">Commercial</span>
+            <span class="type type--1">projects</span>
           </div>
+
+          <!-- Soonta -->
           <div class="content__line">
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
-            <span class="type type--6">Franklin</span>
-            <span class="type type--1">Berlin</span>
+            <span class="type type--1">Soonta</span>
+            <span class="type type--1">.com.au</span>
+            <a href="">
+              <span class="type type--6">Soonta</span>
+            </a>
+            <span class="type type--6">.com.au</span>
+            <span class="type type--1">Soonta</span>
+            <span class="type type--1">.com.au</span>
           </div>
+          <!-- Soonta -->
           <div class="content__line">
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
-            <span class="type type--5">Tokyo</span>
-            <span class="type type--2">Hoshen</span>
+            <div class="content__line_img">
+              <img class="" src="./media/soonta2.jpg" alt="Some image" />
+            </div>
+            <div class="content__line_img">
+              <img class="" src="./media/soonta1.jpg" alt="Some image" />
+            </div>
+          </div>
+          <!-- Soonta -->
+          <div class="content__line">
+            <div class="content__line_group">
+              <p>
+                At Soonta, we are passionate about our food. We strive to
+                provide healthy and hearty Vietnamese fusion food to savvy
+                Adelaide eaters. Our menu is inspired by the ancient rule of
+                Vietnamese cuisine - the balance between Ying and Yang. Or, the
+                balance between meat and vegetable, spiciness and freshness,
+                traditional Vietnamese foods and a modern Australian palate,
+                and, most importantly, the balance of nutrition. Our salads,
+                bread rolls and food bowls are freshly prepared in our kitchen
+                and served every day. A bit of kindness and a delicious meal
+                goes a long way!
+              </p>
+            </div>
+          </div>
+
+          <!-- Photography -->
+          <div class="content__line">
+            <span class="type type--1">street</span>
+            <span class="type type--5">Photography</span>
+            <span class="type type--1">people</span>
+            <!-- <span class="type type--2">landscape</span>
+            <span class="type type--5">commercial</span> -->
+          </div>
+          <!-- Photography -->
+          <div class="content__line imgGroup">
+            <div class="content__line_img">
+              <img class="grayscale" src="./media/6.jpg" alt="" />
+            </div>
+            <div class="content__line_img">
+              <img class="" src="./media/5.jpg" alt="" />
+            </div>
+            <div class="content__line_img">
+              <img class="grayscale" src="./media/7.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="content__line">
+            <span class="type type--1">Adelaide</span>
+            <span class="type type--2">Virginia</span>
+            <span class="type type--1">Sydney</span>
+            <span class="type type--2">Melbourne</span>
+          </div>
+
+          <!-- Music -->
+          <div class="content__line">
+            <span class="type type--3">Piano</span>
+            <span class="type type--4">Music</span>
+            <span class="type type--3">Piano</span>
+            <span class="type type--4">Music</span>
+            <span class="type type--3">Piano</span>
+            <span class="type type--4">Music</span>
+          </div>
+          <!-- Music -->
+          <div class="content__line">
+            <div class="content__line_group threeThirdWidth">
+              <a href=""><span class="type type--6">SOMEwhere</span></a>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ratione tenetur non nulla suscipit voluptates qui reprehenderit,
+                incidunt pariatur eveniet totam sapiente facere commodi
+                assumenda cupiditate dolores voluptas at accusantium vitae
+                corporis! Delectus nulla veritatis quasi velit, ducimus soluta
+                est asperiores rem necessitatibus voluptate quidem tempore error
+                sed, placeat ad molestiae! Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Ratione tenetur non nulla suscipit
+                voluptates qui reprehenderit, incidunt pariatur eveniet totam
+                sapiente facere commodi assumenda cupiditate dolores voluptas
+              </p>
+            </div>
+            <div class="content__line_img">
+              <img class="" src="./media/img2.jpg" alt="Some image" />
+            </div>
+          </div>
+
+          <!-- line -->
+          <div class="content__line">
+            <div class="line"></div>
+          </div>
+
+          <div class="content__line">
+            <span class="type type--5">contact&nbsp;</span>
+            <span class="type type--2">me&nbsp;</span>
+            <a href="mailto:keiralynh@gmail.com">
+              <span class="type type--5">contact&nbsp;</span>
+            </a>
+            <a href="mailto:keiralynh@gmail.com">
+              <span class="type type--2">me&nbsp;</span>
+            </a>
+            <span class="type type--5">contact&nbsp;</span>
+            <span class="type type--2">me&nbsp;</span>
           </div>
         </div>
 
@@ -209,10 +334,6 @@
             <div class="fold fold-after"></div>
           </div>
         </div>
-
-        <a class="btn-theme" id="btn-theme">
-          light
-        </a>
       </div>
     </main>
     <script src="./js/default.js"></script>

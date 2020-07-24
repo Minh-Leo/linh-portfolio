@@ -9,8 +9,8 @@
 
   // Toggle light or dark mode
   const toggleTheme = () => {
-    wrapper.classList.toggle('theme');
     body.classList.toggle('theme');
+    wrapper.classList.toggle('theme');
   };
   btn.addEventListener('click', toggleTheme);
 
