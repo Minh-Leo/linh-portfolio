@@ -9,7 +9,7 @@
 }
 
 :root {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 body {
@@ -251,40 +251,69 @@ a:focus {
 }
 
 .social__circle {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   width: 12rem;
   height: 12rem;
-  background: #0f1a20;
-  border-radius: 50%;
-  position: absolute;
+  border-radius: 40%;
+  position: fixed;
   top: 50%;
-  right: 0;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  right: -1.5rem;
+  -webkit-transform: translate(0, -40%);
+          transform: translate(0, -40%);
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 .social__circle .fab {
   position: absolute;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
 .social__circle .fa-facebook {
-  top: 2rem;
-  left: 0;
+  top: 5rem;
+  left: 5.5rem;
 }
 
 .social__circle .fa-instagram {
   top: 5rem;
-  left: 0;
+  left: 5.5rem;
 }
 
 .social__circle .fa-linkedin {
-  top: 8rem;
-  left: 0;
+  top: 5rem;
+  left: 5.5rem;
 }
 
 .social__circle .fa-youtube {
-  top: 11rem;
-  left: 0;
+  top: 5rem;
+  left: 5.5rem;
+}
+
+.appear {
+  opacity: 1;
+  visibility: visible;
+}
+
+.appear .fa-facebook {
+  top: 1rem;
+  left: 3.5rem;
+}
+
+.appear .fa-instagram {
+  top: 3.5rem;
+  left: 1.5rem;
+}
+
+.appear .fa-linkedin {
+  top: 7rem;
+  left: 1.5rem;
+}
+
+.appear .fa-youtube {
+  top: 9.5rem;
+  left: 3.5rem;
 }
 
 .nav__side .btn-side {
