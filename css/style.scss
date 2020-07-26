@@ -65,7 +65,7 @@
 
 .nav {
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  // font-weight: bold;
   padding: 3rem 5vw;
   text-align: center;
   position: relative;
@@ -90,8 +90,37 @@
   }
 }
 
-.nav__links {
+.nav__links,
+.nav__bottom {
   display: inline;
+
+  .current {
+    border-bottom: 1px solid var(--color-link);
+    pointer-events: none;
+  }
+
+  a {
+    position: relative;
+    transition: 0.4s all cubic-bezier(0.22, 0.68, 0, 1.71);
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-link);
+      visibility: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+        visibility: visible;
+      }
+    }
+  }
 }
 
 .nav__links a:not(:last-child),
@@ -127,23 +156,26 @@
 
   & .fab {
     position: absolute;
-    transition: 0.6s all cubic-bezier(0.22, 0.68, 0, 1.71);
   }
   & .fa-facebook {
     top: 5rem;
     left: 5.5rem;
+    transition: 0.4s all cubic-bezier(0.22, 0.68, 0, 1.71);
   }
   & .fa-instagram {
     top: 5rem;
     left: 5.5rem;
+    transition: 0.6s all cubic-bezier(0.22, 0.68, 0, 1.71);
   }
   & .fa-linkedin {
     top: 5rem;
     left: 5.5rem;
+    transition: 0.7s all cubic-bezier(0.22, 0.68, 0, 1.71);
   }
   & .fa-youtube {
     top: 5rem;
     left: 5.5rem;
+    transition: 0.8s all cubic-bezier(0.22, 0.68, 0, 1.71);
   }
 }
 
@@ -153,24 +185,24 @@
 
   & .fa-facebook {
     top: 1rem;
-    left: 3.5rem;
+    left: 3rem;
   }
   & .fa-instagram {
     top: 3.5rem;
     left: 1.5rem;
   }
   & .fa-linkedin {
-    top: 7rem;
+    top: 6.5rem;
     left: 1.5rem;
   }
   & .fa-youtube {
     top: 9.5rem;
-    left: 3.5rem;
+    left: 3rem;
   }
 }
 .shake {
   & i {
-    transform: rotate(-15deg) scale(1.1);
+    transform: rotate(-45deg) scale(1.1);
   }
 }
 
@@ -219,6 +251,7 @@
 
 .content__line {
   width: 100%;
+  height: auto;
   text-align: space-evenly;
   margin: 1vh auto;
   display: flex;
@@ -245,6 +278,7 @@
     overflow: hidden;
 
     & img {
+      box-shadow: 4px 4px 10px var(--color-shadow);
       // height: 100%;
     }
 
