@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 @import './config.scss';
 @import './projects.scss';
+@import './gallery-modal.scss';
 
 .screen {
   position: fixed;
@@ -42,9 +43,9 @@
 }
 
 /*  theme */
-.theme,
-.theme .fold:nth-child(2n),
-.theme .fold:nth-child(2n + 1) {
+.theme {
+  // .theme .fold:nth-child(2n),
+  // .theme .fold:nth-child(2n + 1) {
   background: var(--color-bg-light);
   color: var(--color-text-dark);
 }
@@ -385,7 +386,7 @@
 .fold {
   overflow: hidden;
   width: 100vw;
-  height: 90vh;
+  height: 97vh;
   will-change: transform;
 }
 
@@ -404,7 +405,7 @@
 
 .fold-center {
   transform-origin: center center;
-  transform: translateZ(-50px) translate3d(0, 0, 0) rotateX(0deg)
+  transform: translateZ(-50px) translate3d(0, 0vh, 0) rotateX(0deg)
     scale3d(1, 1.002004008016032, 1);
 }
 
@@ -412,12 +413,13 @@
   // background: var(--color-bg);
   position: absolute;
   transform-origin: top center;
-  transform: translateZ(-50px) translate3d(0, 90vh, 0) rotateX(120deg)
+  transform: translateZ(-50px) translate3d(0, 97.5vh, 0) rotateX(120deg)
     scale3d(1, 1.002004008016032, 1);
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
+  opacity: 0.7;
 }
 
 /* .fold-size-fix {
@@ -432,12 +434,13 @@
   // background: var(--color-bg);
   position: absolute;
   transform-origin: bottom center;
-  transform: translateZ(-50px) translate3d(0, -90vh, 0) rotateX(-120deg)
+  transform: translateZ(-50px) translate3d(0, -97.5vh, 0) rotateX(-120deg)
     scale3d(1, 1.002004008016032, 1);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  opacity: 0.7;
 }
 
 .fold-before h1 {

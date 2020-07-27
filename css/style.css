@@ -285,6 +285,92 @@ a:focus {
   font-size: 2rem;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 50px;
+  overflow: auto;
+  background-color: #000000dd;
+  z-index: 999;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+}
+
+.img-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.img-content img {
+  width: 60%;
+  height: auto;
+}
+
+.img-content .caption-container {
+  font-size: 2rem;
+  width: 40%;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  padding: 2px 1rem;
+  color: rgbvar(--color-text);
+}
+
+/* Caption text */
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .screen {
   position: fixed;
   top: 0;
@@ -332,9 +418,7 @@ a:focus {
 }
 
 /*  theme */
-.theme,
-.theme .fold:nth-child(2n),
-.theme .fold:nth-child(2n + 1) {
+.theme {
   background: var(--color-bg-light);
   color: var(--color-text-dark);
 }
@@ -727,7 +811,7 @@ a:focus {
 .fold {
   overflow: hidden;
   width: 100vw;
-  height: 90vh;
+  height: 97vh;
   will-change: transform;
 }
 
@@ -754,20 +838,21 @@ a:focus {
 .fold-center {
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-transform: translateZ(-50px) translate3d(0, 0, 0) rotateX(0deg) scale3d(1, 1.002, 1);
-          transform: translateZ(-50px) translate3d(0, 0, 0) rotateX(0deg) scale3d(1, 1.002, 1);
+  -webkit-transform: translateZ(-50px) translate3d(0, 0vh, 0) rotateX(0deg) scale3d(1, 1.002, 1);
+          transform: translateZ(-50px) translate3d(0, 0vh, 0) rotateX(0deg) scale3d(1, 1.002, 1);
 }
 
 .fold-after {
   position: absolute;
   -webkit-transform-origin: top center;
           transform-origin: top center;
-  -webkit-transform: translateZ(-50px) translate3d(0, 90vh, 0) rotateX(120deg) scale3d(1, 1.002, 1);
-          transform: translateZ(-50px) translate3d(0, 90vh, 0) rotateX(120deg) scale3d(1, 1.002, 1);
+  -webkit-transform: translateZ(-50px) translate3d(0, 97.5vh, 0) rotateX(120deg) scale3d(1, 1.002, 1);
+          transform: translateZ(-50px) translate3d(0, 97.5vh, 0) rotateX(120deg) scale3d(1, 1.002, 1);
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
+  opacity: 0.7;
 }
 
 /* .fold-size-fix {
@@ -784,12 +869,13 @@ a:focus {
   position: absolute;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  -webkit-transform: translateZ(-50px) translate3d(0, -90vh, 0) rotateX(-120deg) scale3d(1, 1.002, 1);
-          transform: translateZ(-50px) translate3d(0, -90vh, 0) rotateX(-120deg) scale3d(1, 1.002, 1);
+  -webkit-transform: translateZ(-50px) translate3d(0, -97.5vh, 0) rotateX(-120deg) scale3d(1, 1.002, 1);
+          transform: translateZ(-50px) translate3d(0, -97.5vh, 0) rotateX(-120deg) scale3d(1, 1.002, 1);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  opacity: 0.7;
 }
 
 .fold-after .fold-scroller {
