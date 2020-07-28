@@ -18,47 +18,42 @@ btnTheme.addEventListener('click', toggleTheme);
 btnSocial.addEventListener('click', toggleSocialIcons);
 
 // // Modal Gallery
-// const showSlides = (n) => {
-//   let i;
-//   let slides = document.getElementsByClassName('mySlides');
-//   let dots = document.getElementsByClassName('demo');
-//   let captionText = document.getElementById('caption');
-//   if (n > slides.length) {
-//     slideIndex = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length;
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = 'none';
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(' active', '');
-//   }
-//   slides[slideIndex - 1].style.display = 'block';
-//   dots[slideIndex - 1].className += ' active';
-//   captionText.innerHTML = dots[slideIndex - 1].alt;
-// };
-
 // Open the Modal
 const openModal = () => {
   document.getElementById('myModal').style.display = 'block';
 };
-
 // Close the Modal
 const closeModal = () => {
   document.getElementById('myModal').style.display = 'none';
 };
 
-let slideIndex = 1;
-// showSlides(slideIndex);
+const getGallery = (num) => {
+  let modalContent = document.getElementById('myModalContent');
+  modalContent.innerHTML = '';
 
-// Next/previous controls
-const plusSlides = (n) => {
-  showSlides((slideIndex += n));
+  contents[num].forEach((ele, index) => {
+    let imgRow = document.createElement('div');
+    imgRow.classList.add('img-content');
+
+    let img = `<img src="${ele[0]}" alt="" />`;
+    let caption = `<div class="caption-container">
+        <p> ${index + 1}. 
+           ${ele[1]}
+        </p>
+      </div>`;
+    index % 2 === 0
+      ? (imgRow.innerHTML = img + caption)
+      : (imgRow.innerHTML = caption + img);
+
+    modalContent.appendChild(imgRow);
+  });
 };
 
-// Thumbnail image controls
-const currentSlide = (n) => {
-  showSlides((slideIndex = n));
-};
+// let galleryWrapper = document.getElementById('gallery-wrapper');
+// if (galleryWrapper) {
+//   let arr = galleryWrapper.querySelectorAll('a.card');
+//   console.log(arr);
+//   arr.forEach((card) => {
+//     card.addEventListener('click', openModal);
+//   });
+// }

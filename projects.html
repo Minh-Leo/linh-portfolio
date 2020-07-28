@@ -136,73 +136,73 @@
           <div class="content__line">
             <div class="line"></div>
           </div>
-          <!-- SlideShow 1-->
+          <!-- SlideShow Photography -->
           <div class="content__line">
-            <div class="slide__wrapper">
-              <a href="#" class="card">
+            <div class="slide__wrapper" id="gallery-wrapper">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/5.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card" onclick="openModal();">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/3.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/4.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/6.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/8.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/l2.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/7.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/1.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img class="card-bg" data-swap="" src="./media/9.jpg" alt="" />
                 <div class="card-data">
                   <h1>Black Sails</h1>
                   <p>Adventure, Drama</p>
                 </div>
               </a>
-              <a href="#" class="card">
+              <a class="card" onclick="openModal();getGallery(1)">
                 <img
                   class="card-bg"
                   data-swap=""
@@ -318,12 +318,14 @@
         </div>
       </div>
 
+      <!-- MODAL Gallery -->
       <div class="modal" id="myModal">
         <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-          <div class="img-content">
+
+        <div class="modal-content" id="myModalContent">
+          <!-- <div class="img-content">
             <img src="./media/projects/intro1.jpg" alt="" />
-            <div class="caption-container">
+            <div class="caption-container type--1">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo commodi ex quis, quam corrupti consequatur, facilis
@@ -356,11 +358,12 @@
                 explicabo!
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
 
+    <script src="./js/gallery-content.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/default.js"></script>
   </body>

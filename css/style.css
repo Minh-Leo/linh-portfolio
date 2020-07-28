@@ -26,7 +26,7 @@ body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: mongoose, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -296,7 +296,7 @@ a:focus {
   margin: 0 auto;
   padding-top: 50px;
   overflow: auto;
-  background-color: #000000dd;
+  background-color: #000000ee;
   z-index: 999;
 }
 
@@ -333,6 +333,9 @@ a:focus {
 .img-content img {
   width: 60%;
   height: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: solid 1px var(--color-link);
 }
 
 .img-content .caption-container {
@@ -351,12 +354,25 @@ a:focus {
   text-align: right;
   padding: 2px 1rem;
   color: rgbvar(--color-text);
+  position: relative;
+}
+
+.img-content .caption-container p:before {
+  content: '';
+  width: 9rem;
+  height: 1px;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  background: var(--color-link);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 /* Caption text */
 /* The Close Button */
 .close {
-  color: white;
+  color: var(--color-link);
   position: absolute;
   top: 10px;
   right: 50%;
@@ -366,7 +382,7 @@ a:focus {
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: var(--color-link-hover);
   text-decoration: none;
   cursor: pointer;
 }
@@ -748,8 +764,8 @@ a:focus {
 }
 
 .content__line_group p {
-  font-size: 2rem;
-  letter-spacing: 0.1em;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
   text-align: justify;
 }
 

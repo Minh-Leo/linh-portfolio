@@ -9,7 +9,7 @@
   margin: 0 auto;
   padding-top: 50px;
   overflow: auto;
-  background-color: #000000dd;
+  background-color: #000000ee;
   z-index: 999;
 }
 
@@ -35,6 +35,9 @@
   img {
     width: 60%;
     height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: solid 1px var(--color-link);
   }
 
   .caption-container {
@@ -48,6 +51,21 @@
     // background-color: var(--color-bg);
     padding: 2px 1rem;
     color: rgbvar(--color-text);
+    position: relative;
+
+    p {
+      &:before {
+        content: '';
+        width: 9rem;
+        height: 1px;
+        position: absolute;
+
+        bottom: 5rem;
+        left: 50%;
+        background: var(--color-link);
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
 
@@ -55,7 +73,7 @@
 
 /* The Close Button */
 .close {
-  color: white;
+  color: var(--color-link);
   position: absolute;
   top: 10px;
   right: 50%;
@@ -65,7 +83,7 @@
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: var(--color-link-hover);
   text-decoration: none;
   cursor: pointer;
 }
