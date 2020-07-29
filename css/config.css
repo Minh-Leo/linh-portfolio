@@ -129,6 +129,10 @@ a:focus {
   font-size: 6rem !important;
 }
 
+.marginMD {
+  margin: 3rem !important;
+}
+
 .maxContent {
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
