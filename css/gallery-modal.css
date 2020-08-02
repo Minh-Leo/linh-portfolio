@@ -61,7 +61,7 @@
 }
 
 .img-content .caption-container {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 40%;
   margin-left: 1rem;
   display: -webkit-box;
@@ -95,11 +95,12 @@
 /* The Close Button */
 .close {
   color: var(--color-link);
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 50%;
   font-size: 35px;
   font-weight: bold;
+  z-index: 10;
 }
 
 .close:hover,
