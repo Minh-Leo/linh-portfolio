@@ -37,7 +37,7 @@ const getGallery = (num) => {
 
     let img = `<img src="${ele[0]}" alt="" />`;
     let caption = `<div class="caption-container">
-        <p> ${index + 1}. 
+        <p> | 
            ${ele[1]}
         </p>
       </div>`;
